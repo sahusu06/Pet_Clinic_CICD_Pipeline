@@ -46,7 +46,7 @@ Our project follows a CI/CD pipeline to ensure code quality, consistent builds, 
 
 Continuous Integration (CI):
 
-Jenkins job ensures the build .
+Using Jenkins pipeline code build has been ensured.
 
 Continuous Deployment (CD):
 

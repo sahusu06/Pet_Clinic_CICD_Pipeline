@@ -1,0 +1,13 @@
+---
+- name: Create Image & Run container
+  hosts: localhost
+  tasks:
+
+          - name: create image
+            ansible.builtin.shell: "docker build . -t 20.244.3.245:8082/petclinic:2.0"
+            args:
+             chdir: /home/sumit/Image/
+          - name: push image
+            ansible.builtin.shell: "docker push 20.244.3.245:8082/petclinic:2.0"
+          - name: run container
+            ansible.builtin.shell: "docker run -dit -p 8080:8080 20.244.3.245:8082/petclinic:2.0"

@@ -39,4 +39,22 @@ Before getting started, make sure you have the following tools and services set 
 3. Run Nexus,SonarQube,Postgres DB and Jenkins containers on the build server.
 4. Docker Compose to start Nexus,SonarQube and Postgres DB containers have been provided in the repository.
 5. Ansible Playbooks have been created to move Jar artefcats,create docker images and push image to Nexus repoitory.
+
+## CI/CD Pipeline
+
+Our project follows a CI/CD pipeline to ensure code quality, consistent builds, and automated deployments:
+
+Continuous Integration (CI):
+
+Jenkins job ensures the build .
+
+Continuous Deployment (CD):
+
+Using Jenkins pipeline, Ansible playbooks have triggered to ensure continous deployment.
+Ansible is used to move artefacts; create & push image and run container.
+
+
+
+
+
    
